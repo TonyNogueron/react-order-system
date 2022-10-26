@@ -5,10 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>Orders</h1>
-      {orders &&
-        orders.map((order) => {
-          return <Order props={order} />;
-        })}
+      <Order props={orders} />
     </div>
   );
 }

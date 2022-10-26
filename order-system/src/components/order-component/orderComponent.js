@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./orderComponent.css";
 
 function Order({ props }) {
-  const { id, nombreCompleto, folio, telefono } = props;
   const titles = [
     "Id",
     "Folio",
@@ -32,18 +31,42 @@ function Order({ props }) {
     <div className="orderContainer">
       <table id="tabla">
         <tbody>
-        <tr>
-        {titles &&
-          titles.map((title) => {
-            return <th>{title}</th>;
-          })}
-      </tr>
-          <tr key={id}>
-            <td>{id}</td>
-            <td>{nombreCompleto}</td>
-            <td>{folio}</td>
-            <td>{telefono}</td>
+          <tr>
+            {titles &&
+              titles.map((title) => {
+                return <th>{title}</th>;
+              })}
           </tr>
+          {props &&
+            props.map((order) => {
+              return (
+                <tr>
+                  <td>{order.id}</td>
+                  <td>{order.folio}</td>
+                  <td>{order.hora}</td>
+                  <td>{order.nombreCompleto}</td>
+                  <td>{order.telefono}</td>
+                  <td>{order.paquete}</td>
+                  <td>{order.polloRelleno}</td>
+                  <td>{order.lomo}</td>
+                  <td>{order.pierna}</td>
+                  <td>{order.costilla}</td>
+                  <td>{order.polloAdobado}</td>
+                  <td>{order.polloNatural}</td>
+                  <td>{order.manzana}</td>
+                  <td>{order.espaguetti}</td>
+                  <td>{order.codo}</td>
+                  <td>{order.rusa}</td>
+                  <td>{order.chiles}</td>
+                  <td>{order.otros}</td>
+                  <td>{order.total}</td>
+                  <td>{order.anticipo}</td>
+                  <td>{order.resta}</td>
+                  <td>{order.entregado ? "Si" : "No"}</td>
+                  <td>{order.pagado  ? "Si" : "No"}</td>
+                </tr>
+              );
+            })}
         </tbody>
       </table>
     </div>
