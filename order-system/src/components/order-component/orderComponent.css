@@ -8,7 +8,7 @@
 
 #tabla td, #tabla th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 4px;
   }
   
   #tabla tr:nth-child(even){background-color: #f2f2f2;}

@@ -24,8 +24,8 @@
     "pagado": false
 },
 {
-    "id": 1,
-    "folio": 2102,
+    "id": 2,
+    "folio": null,
     "hora": "1:00",
     "nombreCompleto": "Kevin",
     "telefono": "7341172210",
@@ -45,6 +45,31 @@
     "total": 0,
     "anticipo": 0,
     "resta": 0,
+    "entregado": false,
+    "pagado": false
+},
+{
+    "id": 3,
+    "folio": 2345,
+    "hora": "15:00",
+    "nombreCompleto": "Turner",
+    "telefono": "7341172210",
+    "paquete": 0,
+    "polloRelleno": 1,
+    "lomo": 2,
+    "pierna": 0,
+    "costilla": 0.5,
+    "polloAdobado": 1,
+    "polloNatural": 6,
+    "manzana": 1,
+    "espaguetti": 1,
+    "codo": 0,
+    "rusa": 1,
+    "chiles": 0.5,
+    "otros": null,
+    "total": 4500,
+    "anticipo": 3000,
+    "resta": 1500,
     "entregado": false,
     "pagado": false
 }]
