@@ -8,19 +8,42 @@ const insertOrder = (req, res) => {
   const body = req.body;
   const sql =
     "INSERT INTO Pedido (folio, hora, nombreCompleto, telefono, paquete, polloRelleno, lomo, pierna, costilla, polloAdobado, polloNatural, manzana, espaguetti, codo, rusa, chiles, otros, total, anticipo, resta, entregado, pagado) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-    connection.query(
-        sql,
-        [body.folio, body.hora, body.nombreCompleto, body.telefono, body.paquete, body.polloRelleno, body.lomo, body.pierna, body.costilla, body.polloAdobado, body.polloNatural, body.manzana, body.espaguetti, body.codo, body.rusa, body.chiles, body.otros, body.total, body.anticipo, body.resta, body.entregado, body.pagado],
-        (err, result, fields) => {
-            if (err) {
-                res.status(500).send(err);
-                return false;
-            } else {
-                res.status(200).send('Order inserted successfully');
-                return true;
-            }
-        }
-    );
+  connection.query(
+    sql,
+    [
+      body.folio,
+      body.hora,
+      body.nombreCompleto,
+      body.telefono,
+      body.paquete,
+      body.polloRelleno,
+      body.lomo,
+      body.pierna,
+      body.costilla,
+      body.polloAdobado,
+      body.polloNatural,
+      body.manzana,
+      body.espaguetti,
+      body.codo,
+      body.rusa,
+      body.chiles,
+      body.otros,
+      body.total,
+      body.anticipo,
+      body.resta,
+      body.entregado,
+      body.pagado,
+    ],
+    (err, result, fields) => {
+      if (err) {
+        res.status(500).send(err);
+        return false;
+      } else {
+        res.status(200).send("Order inserted successfully");
+        return true;
+      }
+    }
+  );
 };
 
 const getAllOrders = (req, res) => {
@@ -40,7 +63,8 @@ const getAllOrders = (req, res) => {
 const getOrderInRange = (req, res) => {
   const start = req.query.start;
   const end = req.query.end;
-  const sql = "SELECT * FROM Pedido WHERE hora BETWEEN ? AND ? ORDER BY hora ASC;";
+  const sql =
+    "SELECT * FROM Pedido WHERE hora BETWEEN ? AND ? ORDER BY hora ASC;";
 
   connection.query(sql, [start, end], (err, result, fields) => {
     if (err) {
@@ -52,6 +76,5 @@ const getOrderInRange = (req, res) => {
     }
   });
 };
-
 
 module.exports = { insertOrder, getAllOrders, getOrderInRange };
