@@ -1,19 +1,16 @@
-//import orders from "./utils/testOrder.json";
 import React from "react";
-import styles from "./App.css";
 import ViewOrderPage from "./pages/view-order-page/viewOrderPage";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <ViewOrderPage />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/viewOrder" element={<ViewOrderPage />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-
-/*
-        <ViewOrderPage />
-
-*/
