@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./Formulario.css";
 import styles2 from "../../components/hora-component/Hora.css";
 import styles3 from "../../components/comanda-component/Comanda.css";
-import styles4 from "../../components/"
 
 function Formulario(){
     const [folio, setFolio] = useState(0);
