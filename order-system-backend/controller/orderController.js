@@ -38,10 +38,11 @@ const getAllOrders = (req, res) => {
 };
 
 const getOrderInRange = (req, res) => {
-  const body = req.body;
+  const start = req.query.start;
+  const end = req.query.end;
   const sql = "SELECT * FROM Pedido WHERE hora BETWEEN ? AND ? ORDER BY hora ASC;";
 
-  connection.query(sql, [body.start, body.end], (err, result, fields) => {
+  connection.query(sql, [start, end], (err, result, fields) => {
     if (err) {
       res.send(err);
       return false;
