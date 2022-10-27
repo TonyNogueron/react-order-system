@@ -54,10 +54,18 @@ function App() {
   return (
     <div className="App">
       <Folio />
-=======
+      
+    </div>
+  );
+}
+
+export default App;
+
+/*
       <h1>Orders</h1>
       <div className="orderContainer">
       <Order props={orderList} />
+      
       </div>
       <br />
       <br />
@@ -73,17 +81,4 @@ function App() {
       {orderListInRange.length > 0 ? <Order key={"OrderInRange"} props={orderListInRange} /> : null}
       </div>
 
->>>>>>> 091eecb8faccb3e528acfc785732c578d6c70c86
-    </div>
-  );
-}
-
-export default App;
-
-/*
-      <h1>Orders</h1>
-      <div className="orderContainer">
-      <Order props={orderList} />
-      </div>
-      
 */
