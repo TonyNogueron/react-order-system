@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import styles from "./RowComponent.css";
 
 function Row({ props }) {
-
-    const handleRowClick = () => {
-        console.log(`Row clicked: ${props.id}`);
-    }
+  const handleRowClick = () => {
+    console.log(`Row clicked: ${props.id}`);
+  };
 
   return (
     <tr onClick={handleRowClick} key={props.id}>
@@ -30,8 +29,8 @@ function Row({ props }) {
       <td>{props.total}</td>
       <td>{props.anticipo}</td>
       <td>{props.resta}</td>
-      <td>{props.entregado}</td>
-      <td>{props.pagado}</td>
+      <td>{props.entregado ? "Si" : "No"}</td>
+      <td>{props.pagado ? "Si" : "No"}</td>
     </tr>
   );
 }
