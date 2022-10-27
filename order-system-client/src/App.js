@@ -1,6 +1,7 @@
 //import orders from "./utils/testOrder.json";
 import React, { useState, useEffect } from "react";
 import Order from "./components/order-component/orderComponent";
+import Folio from "./components/folio-component/Folio";
 import styles from "./App.css";
 import axios from "axios";
 
@@ -16,12 +17,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Orders</h1>
-      <div className="orderContainer">
-      <Order props={orderList} />
-      </div>
+      <Folio />
     </div>
   );
 }
 
 export default App;
+
+/*
+      <h1>Orders</h1>
+      <div className="orderContainer">
+      <Order props={orderList} />
+      </div>
+      
+*/

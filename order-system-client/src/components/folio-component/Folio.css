@@ -1,0 +1,55 @@
+.Folio{
+    left: 250px;
+    top: 120px;
+    position: absolute;
+    overflow: auto;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Folio h1{
+    font-size: 30px;
+    margin: 0.67em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Folio .wrapper{
+    height: 50px;
+    min-width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border-radius: 12px;
+    background-color: rgb(248, 246, 246);
+}
+
+.Folio .wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Folio .wrapper span.num{
+    font-size: 20px;
+    border-right: 2px solid rgba(0, 0, 0,0.2);
+    border-left: 2px solid rgba(0, 0, 0,0.2);
+    pointer-events: none;
+    user-select: text;
+}
+
+.Folio .wrapper span.minus{
+    background-color: rgb(122, 163, 187);
+    color: white;
+    border-radius: 12px 0 0 12px;
+}
+
+.Folio .wrapper span.plus{
+    background-color: rgb(70, 92, 214);
+    color: white;
+    border-radius: 0 12px 12px 0;
+}
