@@ -70,13 +70,13 @@ function Formulario(){
                 <div className="Pagado">
                     <h1>Pagado</h1>
                     <div class = "wrapper">
-                        <input type="text" class="num" value={Pagado} placeholder="Ingrese el num. de Pagado." onChange={e=> setPagado(e.target.value)}/>
+                        <input type="checkbox" class="num" value={Pagado} placeholder="Ingrese el num. de Pagado." onChange={e=> setPagado(e.target.value)}/>
                     </div>
                 </div>
                 <div className="Entregado">
                     <h1>Entregado</h1>
                     <div class = "wrapper">
-                        <input type="text" class="num" value={Entregado} placeholder="Ingrese el num. de Entregado." onChange={e=> setEntregado(e.target.value)}/>
+                        <input type="checkbox" class="num" value={Entregado} placeholder="Ingrese el num. de Entregado." onChange={e=> setEntregado(e.target.value)}/>
                     </div>
                 </div>
             </section>
