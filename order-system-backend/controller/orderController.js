@@ -37,4 +37,21 @@ const getAllOrders = (req, res) => {
   });
 };
 
-module.exports = { insertOrder, getAllOrders };
+const getOrderInRange = (req, res) => {
+  const start = req.query.start;
+  const end = req.query.end;
+  const sql = "SELECT * FROM Pedido WHERE hora BETWEEN ? AND ? ORDER BY hora ASC;";
+
+  connection.query(sql, [start, end], (err, result, fields) => {
+    if (err) {
+      res.send(err);
+      return false;
+    } else {
+      res.status(200).json(result);
+      return true;
+    }
+  });
+};
+
+
+module.exports = { insertOrder, getAllOrders, getOrderInRange };
