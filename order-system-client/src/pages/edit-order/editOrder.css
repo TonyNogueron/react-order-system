@@ -1,0 +1,362 @@
+:root{
+    --marginDivTop: 2px solid rgb(0, 0, 0);
+    --widthApartados: 75%;
+    --separadores: 10px;
+}
+
+.Form{
+    align-items: center;
+    justify-content: center;
+}
+
+.Form img{
+    width: 150px;
+    height: 150px;
+    margin-left : 46%;
+    top: 0%;
+    margin-top: 10px;
+
+}
+
+.Form .top{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+
+.Form .top .Hora{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    margin-top: 5px;
+    transition: 0.3s;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Form .top-bottom{
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    text-align: center;
+
+}
+
+.Form .top-bottom .Folio{
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    margin: var(--separadores);
+
+}
+
+.Form .top-bottom .Nombre{
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    margin: var(--separadores);
+
+}
+
+
+.Form .top-bottom .Telefono{
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    margin: var(--separadores);
+
+}
+
+.Form .top-bottom .BotBottom {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Form .top-bottom .BotBottom .CantidadPaquetes{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .top-bottom .BotBottom .Pagado{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+
+.Form .top-bottom .BotBottom  .Entregado{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+}
+
+.Form .Pollos{
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    text-align: center;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
+    margin-left: 12.5%;
+}
+
+.Form .Pollos .Relleno{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Pollos .Adobado{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Pollos .Natural{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Carnes{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
+    margin-left: 12.5%;
+}
+
+.Form .Carnes .Lomo{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Carnes .Pierna{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+}
+
+.Form .Carnes .Costilla{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Complementos{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
+    margin-left: 12.5%;
+}
+
+.Form .Complementos .Manzana{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Complementos .Coditos{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Complementos .Spaguetti{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Complementos .BotBottom .Rusa{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Complementos .BotBottom .Chiles{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Complementos .BotBottom .Otros{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .TotalApartado{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
+    margin-left: 12.5%;
+}
+
+.Form .TotalApartado .Anticipo{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .TotalApartado .Restante{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .TotalApartado .Total{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: var(--separadores);
+
+}
+
+.Form .Enviar{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    display: inline;
+    margin-left: 45%;
+
+}
