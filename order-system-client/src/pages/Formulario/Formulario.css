@@ -7,9 +7,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 150px;
 }
-
 
 
 .Form .top .Hora{
@@ -19,12 +18,9 @@
     flex-direction: column;
     height: 120px;
     margin-top: 5px;
-    border-radius: 10px;
     transition: 0.3s;
     overflow: hidden;
-    position: relative;
-    z-index: 1;
-    background-color: rgb(0, 170, 255);
+    text-align: center;
 }
 
 .Form .top-bottom{
@@ -43,8 +39,6 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
-    background-color: rgb(0, 170, 255);
-    margin-left: 60px;
 }
 
 .Form .top-bottom .Nombre{
@@ -55,8 +49,6 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
-    background-color: rgb(0, 170, 255);
-    margin-left: 50px;
 }
 
 
@@ -68,8 +60,6 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
-    background-color: rgb(0, 170, 255);
-    margin-left: 50px;
 }
 
 .Form .top-bottom .BotBottom {
@@ -86,8 +76,6 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
-    background-color: rgb(0, 170, 255);
-    margin-left: 50px;
     display: inline-block;
 }
 
@@ -98,8 +86,6 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
-    background-color: rgb(0, 170, 255);
-    margin-left: 50px;
     display: inline-block;
 }
 
@@ -111,8 +97,155 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
-    background-color: rgb(0, 170, 255);
-    margin-left: 50px;
     display: inline-block;
 }
 
+.Form .Pollos{
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    text-align: center;
+    border-top: 2px solid rgb(0, 0, 0);
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.Form .Pollos .Relleno{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Pollos .Adobado{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Pollos .Natural{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Carnes{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 2px solid rgb(0, 0, 0);
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.Form .Carnes .Lomo{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Carnes .Pierna{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Carnes .Costilla{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Complementos{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 2px solid rgb(0, 0, 0);
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.Form .Complementos .Manzana{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Complementos .Coditos{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Complementos .Spaguetti{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Complementos .BotBottom .Rusa{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Complementos .BotBottom .Chiles{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Complementos .BotBottom .Otros{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}

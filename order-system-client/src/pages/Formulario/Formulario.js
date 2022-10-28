@@ -180,22 +180,24 @@ function Formulario(){
                         <input type="text" className="num" value={Spaguetti} placeholder="Ingrese el num. de Spaguetti." onChange={e=> setSpaguetti(e.target.value)}/>
                     </div>
                 </div>
-                <div className="Rusa">
-                    <h1>Rusa</h1>
-                    <div className = "wrapper">
-                        <input type="text" className="num" value={Rusa} placeholder="Ingrese el num. de Rusa." onChange={e=> setRusa(e.target.value)}/>
+                <div className="BotBottom">
+                    <div className="Rusa">
+                        <h1>Rusa</h1>
+                        <div className = "wrapper">
+                            <input type="text" className="num" value={Rusa} placeholder="Ingrese el num. de Rusa." onChange={e=> setRusa(e.target.value)}/>
+                        </div>
                     </div>
-                </div>
-                <div className = "Chiles">
-                    <h1>Chiles</h1>
-                    <div className = "wrapper">
-                        <input type="text" className="num" value={Chiles} placeholder="Ingrese el num. de Chiles." onChange={e=> setChiles(e.target.value)}/>
+                    <div className = "Chiles">
+                        <h1>Chiles</h1>
+                        <div className = "wrapper">
+                            <input type="text" className="num" value={Chiles} placeholder="Ingrese el num. de Chiles." onChange={e=> setChiles(e.target.value)}/>
+                        </div>
                     </div>
-                </div>
-                <div className = "Otros">
-                    <h1>Otros</h1>
-                    <div className = "wrapper">
-                        <input type="text" className="text" value={Otros} placeholder="Comentarios..." onChange={e=> setOtros(e.target.value)}/>
+                    <div className = "Otros">
+                        <h1>Otros</h1>
+                        <div className = "wrapper">
+                            <input type="text" className="text" value={Otros} placeholder="Comentarios..." onChange={e=> setOtros(e.target.value)}/>
+                        </div>
                     </div>
                 </div>
             </section>
