@@ -97,22 +97,24 @@ function Formulario(){
                         <input type="text" className="num" value={Numero} placeholder="Ingrese el num. de Telefono." onChange={e=> setNumero(e.target.value)}/>
                     </div>
                 </div>
-                <div className="CantidadPaquetes">
-                    <h1>Cantidad de Paquetes</h1>
-                    <div className = "wrapper">
-                        <input type="text" className="num" value={CantidadPaquetes} placeholder="Ingrese el num. de CantidadPaquetes." onChange={e=> setCantidadPaquetes(e.target.value)}/>
+                <div className="BotBottom">
+                    <div className="CantidadPaquetes">
+                        <h1>Cantidad de Paquetes</h1>
+                        <div className = "wrapper">
+                            <input type="text" className="num" value={CantidadPaquetes} placeholder="Ingrese el num. de CantidadPaquetes." onChange={e=> setCantidadPaquetes(e.target.value)}/>
+                        </div>
                     </div>
-                </div>
-                <div className="Pagado">
-                    <h1>Pagado</h1>
-                    <div className = "wrapper">
-                        <input type="checkbox" className="num" value={Pagado} onChange={e => setPagado(e.target.checked)}/>
+                    <div className="Pagado">
+                        <h1>Pagado</h1>
+                        <div className = "wrapper">
+                            <input type="checkbox" className="num" value={Pagado} onChange={e => setPagado(e.target.checked)}/>
+                        </div>
                     </div>
-                </div>
-                <div className="Entregado">
-                    <h1>Entregado</h1>
-                    <div className = "wrapper">
-                        <input type="checkbox" className="num" value={Entregado} onChange={e => setEntregado(e.target.checked)}/>
+                    <div className="Entregado">
+                        <h1>Entregado</h1>
+                        <div className = "wrapper">
+                            <input type="checkbox" className="num" value={Entregado} onChange={e => setEntregado(e.target.checked)}/>
+                        </div>
                     </div>
                 </div>
             </section>
