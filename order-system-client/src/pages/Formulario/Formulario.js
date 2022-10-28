@@ -3,6 +3,8 @@ import styles from "./Formulario.css";
 import styles2 from "../../components/hora-component/Hora.css";
 import styles3 from "../../components/comanda-component/Comanda.css";
 import styles4 from "../../components/folio-component/Folio.css";
+import styles5 from "../../styles/Nombre.css";
+import styles6 from "../../styles/Telefono.css";
 import axios from "axios";
 
 

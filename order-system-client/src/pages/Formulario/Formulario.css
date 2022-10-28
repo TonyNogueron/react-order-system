@@ -298,10 +298,14 @@
 .Form .Enviar{
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     width: 100px;
     height: 50px;
     position: relative;
+    display: inline;
+    margin-left: 48%;
 }
