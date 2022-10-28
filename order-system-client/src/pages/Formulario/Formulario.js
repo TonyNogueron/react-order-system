@@ -74,7 +74,7 @@ function Formulario(){
         "pagado": Pagado
     }
 
-    const postOrder = (e) => {
+    const postOrder = (e) => {  
         console.log(pedidoJson);
         e.preventDefault();
         axios.post("http://localhost:3001/insertOrder", pedidoJson).then((response) => {
