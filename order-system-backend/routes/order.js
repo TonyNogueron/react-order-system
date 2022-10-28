@@ -8,5 +8,6 @@ router.get('/getOrderInRange', orderController.getOrderInRange);
 router.get('/getOrderById', orderController.getOrderById);
 router.get('/getOrdenesPendientes', orderController.getUndeliveredOrders);
 router.put('/entregarOrden', orderController.entregarOrden);
+router.put('/editarOrden', orderController.updateOrder);
 
 module.exports = router;
