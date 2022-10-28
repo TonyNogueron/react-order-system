@@ -1,6 +1,7 @@
 :root{
     --marginDivTop: 2px solid rgb(0, 0, 0);
     --widthApartados: 75%;
+    --separadores: 10px;
 }
 
 .Form{
@@ -44,6 +45,8 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
+    margin: var(--separadores);
+
 }
 
 .Form .top-bottom .Nombre{
@@ -54,6 +57,8 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
+    margin: var(--separadores);
+
 }
 
 
@@ -65,6 +70,8 @@
     height: 120px;
     width: 300px;
     transition: 0.3s;
+    margin: var(--separadores);
+
 }
 
 .Form .top-bottom .BotBottom {
@@ -82,6 +89,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .top-bottom .BotBottom .Pagado{
@@ -92,6 +101,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 
@@ -103,6 +114,7 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
 }
 
 .Form .Pollos{
@@ -123,6 +135,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Pollos .Adobado{
@@ -133,6 +147,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Pollos .Natural{
@@ -143,6 +159,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Carnes{
@@ -163,6 +181,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Carnes .Pierna{
@@ -173,6 +193,7 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
 }
 
 .Form .Carnes .Costilla{
@@ -183,6 +204,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Complementos{
@@ -203,6 +226,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Complementos .Coditos{
@@ -213,6 +238,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Complementos .Spaguetti{
@@ -223,6 +250,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Complementos .BotBottom .Rusa{
@@ -233,6 +262,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Complementos .BotBottom .Chiles{
@@ -243,6 +274,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Complementos .BotBottom .Otros{
@@ -253,6 +286,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .TotalApartado{
@@ -273,6 +308,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .TotalApartado .Restante{
@@ -283,6 +320,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .TotalApartado .Total{
@@ -293,6 +332,8 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+    margin: var(--separadores);
+
 }
 
 .Form .Enviar{
@@ -308,4 +349,5 @@
     position: relative;
     display: inline;
     margin-left: 48%;
+
 }
