@@ -222,8 +222,6 @@ function Formulario(){
                     </div>
                 </div>
             </section>
-            <br/>
-            <br/>
             <button className="Enviar" onClick={postOrder}>Enviar</button>
         </div>
     );

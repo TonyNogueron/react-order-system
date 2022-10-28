@@ -1,3 +1,8 @@
+:root{
+    --marginDivTop: 2px solid rgb(0, 0, 0);
+    --widthApartados: 75%;
+}
+
 .Form{
     align-items: center;
     justify-content: center;
@@ -105,8 +110,8 @@
     justify-content: center;
     margin-top: 2px;
     text-align: center;
-    border-top: 2px solid rgb(0, 0, 0);
-    width: 75%;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
     margin-left: 12.5%;
 }
 
@@ -145,8 +150,8 @@
     justify-content: center;
     margin-top: 10px;
     text-align: center;
-    border-top: 2px solid rgb(0, 0, 0);
-    width: 75%;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
     margin-left: 12.5%;
 }
 
@@ -185,8 +190,8 @@
     justify-content: center;
     margin-top: 20px;
     text-align: center;
-    border-top: 2px solid rgb(0, 0, 0);
-    width: 75%;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
     margin-left: 12.5%;
 }
 
@@ -248,4 +253,55 @@
     width: 300px;
     transition: 0.3s;
     display: inline-block;
+}
+
+.Form .TotalApartado{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    border-top: var(--marginDivTop);
+    width: var(--widthApartados);
+    margin-left: 12.5%;
+}
+
+.Form .TotalApartado .Anticipo{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .TotalApartado .Restante{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .TotalApartado .Total{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    width: 300px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.Form .Enviar{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    position: relative;
 }
