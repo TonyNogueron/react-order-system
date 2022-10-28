@@ -12,6 +12,15 @@ import styles10 from "../../styles/Pollos/Relleno.css";
 import styles11 from "../../styles/Carnes/Lomo.css";
 import styles12 from "../../styles/Carnes/Costilla.css";
 import styles13 from "../../styles/Carnes/Pierna.css";
+import styles14 from "../../styles/Complementos/Manzana.css";
+import styles15 from "../../styles/Complementos/Chiles.css";
+import styles16 from "../../styles/Complementos/Otros.css";
+import styles17 from "../../styles/Complementos/Rusa.css";
+import styles18 from "../../styles/Complementos/Coditos.css";
+import styles19 from "../../styles/Complementos/Spaguetti.css";
+import styles20 from "../../styles/Total/Anticipo.css";
+import styles21 from "../../styles/Total/Total.css";
+import styles22 from "../../styles/Total/Restante.css";
 import axios from "axios";
 
 
