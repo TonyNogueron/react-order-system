@@ -21,6 +21,7 @@ import styles19 from "../../styles/Complementos/Spaguetti.css";
 import styles20 from "../../styles/Total/Anticipo.css";
 import styles21 from "../../styles/Total/Total.css";
 import styles22 from "../../styles/Total/Restante.css";
+import logo from "../../imgs/LogoPastrana.png"
 import axios from "axios";
 
 
@@ -88,6 +89,7 @@ function Formulario(){
 
     return (
         <div className="Form">
+            <img src={logo} alt="Logo" className="logo"/>
             <section className="top">
                 <div className="Hora">
                     <h1>Hora</h1>
