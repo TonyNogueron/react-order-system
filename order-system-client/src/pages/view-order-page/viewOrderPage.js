@@ -61,7 +61,7 @@ function ViewOrderPage() {
     setInterval(() => {
       getOrders();
       getOrdenesPendientes();
-    }, 20000);
+    }, 5000);
   }, []);
 
   const handleSetHoraInicial = (e) => {
