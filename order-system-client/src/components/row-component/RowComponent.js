@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import styles from "./RowComponent.css";
+import ButtonBar from "../button-bar-row-component/ButtonBarRowComponent";
 
 function Row({ props }) {
   const handleRowClick = () => {
     console.log(`Row clicked: ${props.id}`);
+    setIsRowSelected(!isRowSelected);
   };
+  const [isRowSelected, setIsRowSelected] = useState(false);
 
   return (
+    <>
     <tr onClick={handleRowClick} key={props.id}>
       <td>{props.id}</td>
       <td>{props.folio}</td>
@@ -32,6 +36,8 @@ function Row({ props }) {
       <td>{props.entregado ? "Si" : "No"}</td>
       <td>{props.pagado ? "Si" : "No"}</td>
     </tr>
+    {isRowSelected && <ButtonBar props={props} />}
+    </>
   );
 }
 

@@ -6,6 +6,8 @@ import axios from "axios";
 
 function ViewOrderPage() {
   const [orderList, setOrderList] = useState([]);
+  const [pendingOrderList, setPendingOrderList] = useState([]);
+
 
   const [orderListInRange, setOrderListInRange] = useState([]);
 
@@ -15,6 +17,11 @@ function ViewOrderPage() {
   const [buttonEnd, setButtonEnd] = useState("23:59");
 
   useEffect(() => {
+    getOrders();
+    getOrdenesPendientes();
+  }, []);
+
+  const getOrders = () => {
     axios
       .get("http://localhost:3001/getAllOrders")
       .then((res) => {
@@ -23,7 +30,18 @@ function ViewOrderPage() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  };
+
+  const getOrdenesPendientes = () => {
+    axios
+      .get("http://localhost:3001/getOrdenesPendientes")
+      .then((res) => {
+        setPendingOrderList(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   useEffect(() => {
     console.log(`Hora inicial: ${buttonStart} Hora final: ${buttonEnd}`);
@@ -38,6 +56,13 @@ function ViewOrderPage() {
         console.log(err);
       });
   }, [buttonStart, buttonEnd]);
+
+  useEffect(() => {
+    setInterval(() => {
+      getOrders();
+      getOrdenesPendientes();
+    }, 20000);
+  }, []);
 
   const handleSetHoraInicial = (e) => {
     if (e.target.value === "") {
@@ -62,12 +87,13 @@ function ViewOrderPage() {
 
   return (
     <div className="ViewOrderPage">
-      <h1>Orders</h1>
+      <h1>Ordenes Pendientes</h1>
       <div className="orderContainer">
-        <Order props={orderList} />
+        <Order props={pendingOrderList} />
       </div>
       <br />
       <br />
+      <h1>Ordenes por hora</h1>
       <div>
         <input
           type="text"
@@ -79,7 +105,6 @@ function ViewOrderPage() {
           placeholder="Hora final"
           onChange={handleSetHoraFinal}
         />
-        {`Hora inicial: ${horaInicial} Hora final: ${horaFinal}`}
         <button onClick={handleButtonClick}>Buscar</button>
       </div>
       <br />
@@ -88,6 +113,12 @@ function ViewOrderPage() {
         {orderListInRange.length > 0 ? (
           <Order key={"OrderInRange"} props={orderListInRange} />
         ) : null}
+      </div>
+      <br />
+      <br />
+      <h1>Todas la Ordenes</h1>
+      <div className="orderContainer">
+        <Order props={orderList} />
       </div>
     </div>
   );

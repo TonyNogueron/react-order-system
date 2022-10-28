@@ -47,7 +47,7 @@ const insertOrder = (req, res) => {
 };
 
 const getAllOrders = (req, res) => {
-  const sql = "SELECT * FROM Pedido";
+  const sql = "SELECT * FROM Pedido ORDER BY hora ASC";
 
   connection.query(sql, (err, result, fields) => {
     if (err) {
@@ -77,4 +77,45 @@ const getOrderInRange = (req, res) => {
   });
 };
 
-module.exports = { insertOrder, getAllOrders, getOrderInRange };
+const getOrderById = (req, res) => {
+  const id = req.query.id;
+  const sql = "SELECT * FROM Pedido WHERE id = ?";
+  connection.query(sql, [id], (err, result, fields) => {
+    if (err) {
+      res.send(err);
+      return false;
+    } else {
+      res.status(200).json(result);
+      return true;
+    }
+  });
+};
+
+const entregarOrden = (req, res) => {
+  const id = req.query.id;
+  const sql = "UPDATE Pedido SET entregado = 1 WHERE id = ?";
+  connection.query(sql, [id], (err, result, fields) => {
+    if (err) {
+      res.send(err);
+      return false;
+    } else {
+      res.status(200).send("Order was delivered successfully"); 
+      return true;
+    }
+  });
+};
+
+const getUndeliveredOrders = (req, res) => {
+  const sql = "SELECT * FROM Pedido WHERE entregado = 0 ORDER BY hora ASC";
+  connection.query(sql, (err, result, fields) => {
+    if (err) {
+      res.send(err);
+      return false;
+    } else {
+      res.status(200).json(result);
+      return true;
+    }
+  });
+};
+
+module.exports = { insertOrder, getAllOrders, getOrderInRange, getOrderById , entregarOrden, getUndeliveredOrders};
