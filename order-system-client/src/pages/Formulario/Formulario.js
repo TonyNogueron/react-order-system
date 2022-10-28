@@ -5,6 +5,13 @@ import styles3 from "../../components/comanda-component/Comanda.css";
 import styles4 from "../../components/folio-component/Folio.css";
 import styles5 from "../../styles/Nombre.css";
 import styles6 from "../../styles/Telefono.css";
+import styles7 from "../../styles/CantidadPaquetes.css";
+import styles8 from "../../styles/Pollos/Natural.css";
+import styles9 from "../../styles/Pollos/Adobado.css";
+import styles10 from "../../styles/Pollos/Relleno.css";
+import styles11 from "../../styles/Carnes/Lomo.css";
+import styles12 from "../../styles/Carnes/Costilla.css";
+import styles13 from "../../styles/Carnes/Pierna.css";
 import axios from "axios";
 
 
