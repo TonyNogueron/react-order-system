@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import styles from "./ButtonBarRowComponent.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function ButtonBar({ props }) {
+
+  const navigate = useNavigate();
+
   const handleEntregarClick = (e) => {
     e.preventDefault();
     axios
@@ -19,11 +23,16 @@ function ButtonBar({ props }) {
       });
   };
 
+  const handleEditarClick = (e) => {
+    e.preventDefault();
+    navigate(`/edit-order/?id=${props.id}`);
+  };
+
   return (
     <tr>
       <td colSpan="24" className="buttons">
         <button onClick={handleEntregarClick}>Entregar</button>
-        <button>Editar</button>
+        <button onClick={handleEditarClick}>Editar</button>
       </td>
     </tr>
   );
